@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Patient Details.<p/>
+
+<p id="demo"></p>
+
+<script>
+var myObj, i, j, x="";
+myObj = {
+	"name":"john",
+	"age":30,
+	"cars": [
+		{"name":"Alex", "Disease":["Fever", "Joints Pain", "Notiuas"]},
+		{"name":"Ben", "Disease":["H1N1"]},
+		{"name":"John","Disease":["Dengue"]}
+
+	]
+}
+for (i in myObj.patients) {
+	x +="<h2>" + myObj.patients[i].name + "</h2>";
+	for (j in myObj.patients[i].Disease) {
+		x += myObj.patients[i].Disease[j] + "<br>";
+	}
+}
+
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html> 
