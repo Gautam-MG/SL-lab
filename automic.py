@@ -1,0 +1,2 @@
+import aut
+aut.AutomicDic()
