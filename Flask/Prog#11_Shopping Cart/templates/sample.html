@@ -1,0 +1,17 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<title>Shopping Cart</title>
+	</head>
+
+	<body>
+	<h1> Details </h1>
+	<form action = "{{url_for('store')}}" method="POST">
+		<input name = "watch" type = "number" min="0" value="0"/>Watch - Rs.499 <br>
+		<input name = "Pendrive" type = "number" min="0" value="0"/>Pendrive - Rs.699 <br>
+		<input name = "Shoe" type = "number" min="0" value="0"/>Shoe - Rs.2299 <br><br>
+		<input value = "Add to Cart" type = "submit"/>
+	</form>
+		<a href="{{url_for('cart')}}"> View your Shopping Cart </a>
+	</body>
+	</html>
